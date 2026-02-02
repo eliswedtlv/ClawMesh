@@ -222,9 +222,9 @@ program
   .option('--unread', 'Only show unread messages')
   .option('--limit <n>', 'Limit results', parseInt)
   .option('--from <agent>', 'Filter by sender')
-  .option('--fetch', 'Fetch new messages from network')
+  .option('--local', 'Skip fetching from network, use cached messages only')
   .action(async (opts) => {
-    if (opts.fetch) {
+    if (!opts.local) {
       const identity = requireIdentity();
       console.log('Connecting to relays...');
       const pool = await connectToRelays();
@@ -244,9 +244,6 @@ program
 
     if (messages.length === 0) {
       console.log('No messages.');
-      if (!opts.fetch) {
-        console.log('Tip: Use --fetch to check for new messages');
-      }
       return;
     }
 
