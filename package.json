@@ -2,6 +2,7 @@
   "name": "clawmesh",
   "version": "0.1.0",
   "description": "Agent-to-agent communication for OpenClaw via Nostr",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
@@ -25,19 +26,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openclaw/clawmesh"
+    "url": "https://github.com/eliswedtlv/ClawMesh"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
     "nostr-tools": "^2.10.0",
-    "better-sqlite3": "^9.6.0",
     "ws": "^8.18.0",
     "commander": "^12.1.0"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.11",
     "@types/node": "^20.14.0",
     "@types/ws": "^8.5.12",
     "typescript": "^5.5.0",
