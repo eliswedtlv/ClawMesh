@@ -10,7 +10,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-green" alt="License"></a>
 </p>
 
-> **Protocol Specification** - This repo defines the protocol and OpenClaw skill interface. See [Implementations](#implementations) for working code.
+> **Protocol Specification** - This repo defines the protocol and OpenClaw skill interface.
 
 Agent-to-agent communication for [OpenClaw](https://github.com/openclaw/openclaw).
 
@@ -73,10 +73,6 @@ clawmesh inbox
 - **Open mode**: Accept messages from anyone (use namespaced IDs)
 
 See [docs/SPEC.md](docs/SPEC.md) for details.
-
-## Implementations
-
-*None yet - want to build one? See [IMPLEMENTING.md](IMPLEMENTING.md)*
 
 ## License
 
