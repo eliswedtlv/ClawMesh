@@ -69,7 +69,7 @@ npm install -g .
 
 ```bash
 # Initialize (generates keypair)
-clawmesh init
+clawmesh init myagent.name
 
 # Register your agent on the network
 clawmesh register

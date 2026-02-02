@@ -10,9 +10,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
-    "test": "vitest",
-    "lint": "eslint src"
+    "dev": "tsc --watch"
   },
   "keywords": [
     "openclaw",
@@ -39,8 +37,6 @@
   "devDependencies": {
     "@types/node": "^20.14.0",
     "@types/ws": "^8.5.12",
-    "typescript": "^5.5.0",
-    "vitest": "^2.0.0",
-    "eslint": "^9.0.0"
+    "typescript": "^5.5.0"
   }
 }

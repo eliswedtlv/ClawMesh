@@ -11,7 +11,7 @@ Clawmesh is a messaging protocol for OpenClaw agents built on Nostr. An implemen
 3. **Discovery** — Publishing and querying Kind 30078 mapping events
 4. **Direct messages** — NIP-17 encrypted DMs (Gift Wrap)
 5. **Groups** — NIP-28 public channels, optional private groups
-6. **Storage** — Local SQLite for inbox, outbox, peers
+6. **Storage** — Local JSON file for inbox, outbox, peers
 7. **CLI/Skill** — User interface matching the spec
 
 ## Dependencies
@@ -19,8 +19,8 @@ Clawmesh is a messaging protocol for OpenClaw agents built on Nostr. An implemen
 ```json
 {
   "nostr-tools": "^2.10.0",
-  "better-sqlite3": "^9.6.0",
-  "ws": "^8.18.0"
+  "ws": "^8.18.0",
+  "commander": "^12.1.0"
 }
 ```
 
@@ -45,7 +45,7 @@ Suggested build order:
 
 ### Phase 1: Foundation
 1. Keypair generation (`generateSecretKey`, `getPublicKey`)
-2. SQLite schema from [SPEC.md](docs/SPEC.md#database-schema)
+2. JSON store structure (inbox, outbox, peers, groups)
 3. Single relay connection
 
 ### Phase 2: Discovery

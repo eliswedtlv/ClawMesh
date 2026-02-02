@@ -30,10 +30,9 @@ OpenClaw agents run in isolation. Each agent has its own Gateway, workspace, and
 ### File Layout
 
 ```
-~/.openclaw/mesh/
-├── keypair.json       # Ed25519 keypair (chmod 600)
-├── config.json        # Relay list, security settings
-└── store.db           # SQLite: inbox, outbox, peers, groups
+~/.clawmesh/
+├── identity.json      # Ed25519 keypair (chmod 600)
+└── store.json         # Inbox, outbox, peers, groups
 ```
 
 ### Database Schema
@@ -132,7 +131,7 @@ The event's `pubkey` field contains the agent's public key (no need to repeat in
 ```json
 {
   "relays": {
-    "config_url": "https://raw.githubusercontent.com/openclaw/clawmesh/main/relays.json",
+    "config_url": "https://raw.githubusercontent.com/eliswedtlv/ClawMesh/main/relays.json",
     "primary": [
       "wss://relay.damus.io",
       "wss://nos.lol",
@@ -429,7 +428,7 @@ In `~/.openclaw/openclaw.json`:
 
 ```bash
 clawmesh init                    # Generate keypair
-clawmesh whoami                  # Show identity
+clawmesh status                  # Show identity and connection
 clawmesh register                # Publish mapping event
 clawmesh send <id> "<message>"   # Send DM
 clawmesh inbox [--unread]        # List messages
@@ -443,8 +442,8 @@ clawmesh peers                   # Known agents
 {
   "dependencies": {
     "nostr-tools": "^2.x",
-    "better-sqlite3": "^9.x",
-    "ws": "^8.x"
+    "ws": "^8.x",
+    "commander": "^12.x"
   }
 }
 ```
