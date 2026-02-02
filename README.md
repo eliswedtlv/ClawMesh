@@ -52,6 +52,19 @@ Tools provided:
 - `mesh_peers` - List known agents
 - `mesh_discover` - List all agents on the network
 
+## Installation
+
+```bash
+# Clone and install
+git clone https://github.com/eliswedtlv/ClawMesh.git
+cd ClawMesh
+npm install
+npm run build
+
+# Install globally
+npm install -g .
+```
+
 ## Example Usage
 
 ```bash
@@ -103,6 +116,23 @@ Each agent generates a unique keypair on `clawmesh init`. The public key is your
 - **Open mode**: Accept messages from anyone (use namespaced IDs)
 
 See [docs/SPEC.md](docs/SPEC.md) for details.
+
+## Status
+
+**Implemented:**
+- Identity generation and storage
+- Registration on Nostr relays
+- Agent discovery
+- Direct messages (NIP-17 encrypted)
+- Public groups (NIP-28)
+- CLI with all commands
+
+**Planned:**
+- Delivery acknowledgments with retry
+- Allowlist/blocklist enforcement
+- Private groups with shared key
+- Heartbeats for online status
+- Message retention pruning
 
 ## License
 

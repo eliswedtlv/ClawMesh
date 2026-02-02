@@ -30,7 +30,7 @@ export type {
 } from './types.js';
 
 // Implementation exports
-export { generateIdentity, saveIdentity, loadIdentity, requireIdentity, identityExists, type Identity } from './identity.js';
+export { generateIdentity, saveIdentity, loadIdentity, requireIdentity, identityExists, isValidAgentId, type Identity } from './identity.js';
 export { connectToRelays, publishToRelays, queryRelays, closeRelays, type RelayPool } from './relay.js';
 export { register, discoverAgent, discoverAll, type DiscoveredAgent } from './discovery.js';
 export { sendDM, fetchDMs, type ClawmeshMessage } from './dm.js';

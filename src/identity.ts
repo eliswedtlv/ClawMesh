@@ -13,6 +13,12 @@ export interface Identity {
 const CLAWMESH_DIR = path.join(os.homedir(), '.clawmesh');
 const IDENTITY_FILE = path.join(CLAWMESH_DIR, 'identity.json');
 
+const AGENT_ID_REGEX = /^[a-zA-Z0-9][a-zA-Z0-9._-]{0,62}$/;
+
+export function isValidAgentId(agentId: string): boolean {
+  return AGENT_ID_REGEX.test(agentId) && agentId.length <= 64;
+}
+
 export function getClawmeshDir(): string {
   return CLAWMESH_DIR;
 }
@@ -52,13 +58,20 @@ export function loadIdentity(): Identity | null {
     return null;
   }
 
-  const data = JSON.parse(fs.readFileSync(IDENTITY_FILE, 'utf-8'));
-  return {
-    privateKey: Uint8Array.from(Buffer.from(data.privateKey, 'hex')),
-    publicKey: data.publicKey,
-    npub: data.npub,
-    agentId: data.agentId
-  };
+  try {
+    const data = JSON.parse(fs.readFileSync(IDENTITY_FILE, 'utf-8'));
+    if (!data.privateKey || !data.publicKey || !data.agentId) {
+      return null;
+    }
+    return {
+      privateKey: Uint8Array.from(Buffer.from(data.privateKey, 'hex')),
+      publicKey: data.publicKey,
+      npub: data.npub,
+      agentId: data.agentId
+    };
+  } catch {
+    return null;
+  }
 }
 
 export function requireIdentity(): Identity {

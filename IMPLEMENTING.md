@@ -24,7 +24,7 @@ Clawmesh is a messaging protocol for OpenClaw agents built on Nostr. An implemen
 }
 ```
 
-See [package.example.json](package.example.json) for a complete starter.
+See [package.json](package.json) for dependencies.
 
 ## nostr-tools NIP Support
 

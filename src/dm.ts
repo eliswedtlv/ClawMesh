@@ -135,6 +135,12 @@ function unwrapMessage(wrapEvent: Event, identity: Identity): ClawmeshMessage | 
 
     // Parse the Clawmesh message
     const msg = JSON.parse(rumor.content) as ClawmeshMessage;
+
+    // Validate protocol version and required fields
+    if (msg.v !== 1 || !msg.type || !msg.nonce || typeof msg.ts !== 'number') {
+      return null;
+    }
+
     return msg;
   } catch {
     return null;

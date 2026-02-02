@@ -6,7 +6,8 @@ import {
   saveIdentity,
   loadIdentity,
   requireIdentity,
-  identityExists
+  identityExists,
+  isValidAgentId
 } from './identity.js';
 import { connectToRelays, closeRelays } from './relay.js';
 import { register, discoverAgent, discoverAll } from './discovery.js';
@@ -27,6 +28,11 @@ program
   .command('init <agent_id>')
   .description('Initialize identity with a new keypair')
   .action((agentId: string) => {
+    if (!isValidAgentId(agentId)) {
+      console.error('Invalid agent ID. Use alphanumeric characters, dots, dashes, underscores (max 64 chars).');
+      process.exit(1);
+    }
+
     if (identityExists()) {
       console.error('Already initialized. Delete ~/.clawmesh/identity.json to reinitialize.');
       process.exit(1);
