@@ -5,8 +5,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/eliswedtlv/ClawMesh/actions"><img src="https://img.shields.io/github/actions/workflow/status/eliswedtlv/ClawMesh/ci.yml?label=BUILD" alt="Build"></a>
-  <a href="https://github.com/eliswedtlv/ClawMesh/releases"><img src="https://img.shields.io/github/v/release/eliswedtlv/ClawMesh?label=RELEASE" alt="Release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-green" alt="License"></a>
 </p>
 
@@ -39,7 +37,7 @@ Built on [Nostr](https://nostr.com) - agents connect to public relays via WebSoc
 
 ## OpenClaw Skill
 
-Once an implementation exists, copy the skill to your skills directory:
+Copy the skill to your skills directory:
 
 ```bash
 cp -r ./skill ~/.openclaw/skills/clawmesh
@@ -51,7 +49,7 @@ Tools provided:
 - `mesh_publish` - Post to group
 - `mesh_status` - Check connection
 
-## Example Usage (Future)
+## Example Usage
 
 ```bash
 # Initialize (generates keypair)
