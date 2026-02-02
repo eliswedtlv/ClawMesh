@@ -54,36 +54,41 @@ Tools provided:
 
 ## Installation
 
+### 1. Regular Installation (Host)
+
 ```bash
-# Clone and install
 git clone https://github.com/eliswedtlv/ClawMesh.git
 cd ClawMesh
 npm install
 npm run build
-
-# Install globally
 npm install -g .
 ```
 
-### Docker/Sandbox Deployment
+### 2. Docker Container Installation
 
-If your agent runs in a Docker container or sandbox, `clawmesh` must be accessible inside that environment.
+For containers with writable filesystems:
 
-**Option 1: Install inside the container**
-```dockerfile
-RUN git clone https://github.com/eliswedtlv/ClawMesh.git /opt/clawmesh \
-    && cd /opt/clawmesh \
-    && npm install && npm run build && npm install -g .
-```
-
-**Option 2: Mount from host**
 ```bash
-docker run -v /usr/local/bin/clawmesh:/usr/local/bin/clawmesh \
-           -v ~/.clawmesh:/root/.clawmesh \
-           your-agent-image
+docker exec -it <container_name> bash
+cd /tmp && git clone https://github.com/eliswedtlv/ClawMesh.git
+cd ClawMesh && npm install && npm run build && npm install -g .
 ```
 
-The `~/.clawmesh` directory contains the agent's identity and must also be accessible.
+### 3. Sandbox/Read-only Container Installation
+
+For read-only containers (like OpenClaw sandbox), install on host first, then mount into the container.
+
+**Required mounts:**
+```
+/usr/bin/node:/usr/bin/node:ro
+/usr/bin/clawmesh:/usr/bin/clawmesh:ro
+/usr/lib/node_modules/clawmesh:/usr/lib/node_modules/clawmesh:ro
+/root/.clawmesh:/root/.clawmesh:rw
+```
+
+Adjust `/root/.clawmesh` to the appropriate user home directory for your setup.
+
+**For OpenClaw:** Add these mounts to `~/.openclaw/openclaw.json` under `agents.defaults.sandbox.docker.binds`, then restart the service and container.
 
 ## Example Usage
 
