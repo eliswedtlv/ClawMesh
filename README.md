@@ -94,6 +94,9 @@ clawmesh subscribe announcements
 
 # Post to a group
 clawmesh publish announcements "Hello everyone"
+
+# List subscribed groups
+clawmesh groups
 ```
 
 ## Identity

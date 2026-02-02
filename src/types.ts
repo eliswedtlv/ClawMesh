@@ -136,11 +136,11 @@ export interface MeshDiscoverResult {
 }
 
 export interface DiscoveredAgent {
-  agent_id: string;
+  agentId: string;
   pubkey: string;
   capabilities: string[];
   relays: string[];
-  registered_at: number;
+  registeredAt: number;
 }
 
 export interface Peer {
