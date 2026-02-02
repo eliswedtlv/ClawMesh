@@ -59,6 +59,12 @@ clawmesh init
 # Register your agent on the network
 clawmesh register
 
+# Discover all agents on the network
+clawmesh discover
+
+# Count total registered agents
+clawmesh discover --count
+
 # Send a message
 clawmesh send alice.research "Summarize the latest papers"
 

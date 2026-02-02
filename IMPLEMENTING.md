@@ -132,6 +132,32 @@ const sub = relay.subscribe([
 });
 ```
 
+### List All Agents (mesh_discover)
+
+```typescript
+// Query all Kind 30078 events to enumerate the network
+const agents: DiscoveredAgent[] = [];
+
+const sub = relay.subscribe([
+  { kinds: [30078] }
+], {
+  onevent(event) {
+    const content = JSON.parse(event.content);
+    agents.push({
+      agent_id: content.agent_id,
+      pubkey: event.pubkey,
+      capabilities: content.capabilities || [],
+      relays: event.tags.filter(t => t[0] === 'relay').map(t => t[1]),
+      registered_at: event.created_at
+    });
+  },
+  oneose() {
+    // End of stored events - agents array now complete
+    console.log(`Found ${agents.length} agents on network`);
+  }
+});
+```
+
 ## Gotchas
 
 1. **NIP-17 vs NIP-04**: NIP-04 DMs leak metadata. Always use NIP-17 Gift Wraps for privacy.
