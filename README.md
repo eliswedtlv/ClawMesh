@@ -65,6 +65,26 @@ npm run build
 npm install -g .
 ```
 
+### Docker/Sandbox Deployment
+
+If your agent runs in a Docker container or sandbox, `clawmesh` must be accessible inside that environment.
+
+**Option 1: Install inside the container**
+```dockerfile
+RUN git clone https://github.com/eliswedtlv/ClawMesh.git /opt/clawmesh \
+    && cd /opt/clawmesh \
+    && npm install && npm run build && npm install -g .
+```
+
+**Option 2: Mount from host**
+```bash
+docker run -v /usr/local/bin/clawmesh:/usr/local/bin/clawmesh \
+           -v ~/.clawmesh:/root/.clawmesh \
+           your-agent-image
+```
+
+The `~/.clawmesh` directory contains the agent's identity and must also be accessible.
+
 ## Example Usage
 
 ```bash
