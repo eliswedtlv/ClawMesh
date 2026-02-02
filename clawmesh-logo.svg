@@ -1,0 +1,369 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+  <rect width="500" height="200" fill="#0d1117"/>
+  
+  <!-- Mesh network lines - back layer (faint) -->
+  <g stroke="#222" stroke-width="0.5" opacity="0.4">
+    <!-- Far back horizontal -->
+    <line x1="180" y1="15" x2="320" y2="15"/>
+    <line x1="160" y1="25" x2="340" y2="25"/>
+    <line x1="140" y1="35" x2="360" y2="35"/>
+    <!-- Far back vertical connections -->
+    <line x1="200" y1="15" x2="180" y2="35"/>
+    <line x1="250" y1="15" x2="250" y2="35"/>
+    <line x1="300" y1="15" x2="320" y2="35"/>
+  </g>
+  
+  <!-- Mesh network lines - mid layer -->
+  <g stroke="#333" stroke-width="1" opacity="0.5">
+    <line x1="100" y1="45" x2="400" y2="45"/>
+    <line x1="80" y1="60" x2="420" y2="60"/>
+    <line x1="60" y1="75" x2="440" y2="75"/>
+    <!-- Vertical connections -->
+    <line x1="150" y1="45" x2="120" y2="75"/>
+    <line x1="250" y1="45" x2="250" y2="75"/>
+    <line x1="350" y1="45" x2="380" y2="75"/>
+    <!-- Diagonals -->
+    <line x1="150" y1="45" x2="250" y2="60"/>
+    <line x1="350" y1="45" x2="250" y2="60"/>
+  </g>
+  
+  <!-- Mesh network lines - front layer -->
+  <g stroke="#444" stroke-width="1.5" opacity="0.6">
+    <line x1="30" y1="90" x2="470" y2="90"/>
+    <!-- Connections to mid -->
+    <line x1="80" y1="90" x2="120" y2="75"/>
+    <line x1="250" y1="90" x2="250" y2="75"/>
+    <line x1="420" y1="90" x2="380" y2="75"/>
+  </g>
+  
+  <!-- Active mesh lines -->
+  <g stroke="#e53935" stroke-width="1" opacity="0.3">
+    <line x1="250" y1="15" x2="250" y2="90"/>
+    <line x1="150" y1="45" x2="350" y2="45"/>
+    <line x1="120" y1="75" x2="380" y2="75"/>
+  </g>
+
+  <!-- BACK ROW - tiny lobsters (scale 0.25) -->
+  <g transform="translate(188, 8) scale(0.25)">
+    <rect x="16" y="16" width="8" height="8" fill="#b71c1c"/>
+    <rect x="24" y="16" width="8" height="8" fill="#b71c1c"/>
+    <rect x="8" y="24" width="8" height="8" fill="#b71c1c"/>
+    <rect x="32" y="24" width="8" height="8" fill="#b71c1c"/>
+    <rect x="0" y="8" width="8" height="8" fill="#b71c1c"/>
+    <rect x="40" y="8" width="8" height="8" fill="#b71c1c"/>
+    <rect x="12" y="12" width="4" height="4" fill="#888"/>
+  </g>
+  <g transform="translate(218, 8) scale(0.25)">
+    <rect x="16" y="16" width="8" height="8" fill="#b71c1c"/>
+    <rect x="24" y="16" width="8" height="8" fill="#b71c1c"/>
+    <rect x="8" y="24" width="8" height="8" fill="#b71c1c"/>
+    <rect x="32" y="24" width="8" height="8" fill="#b71c1c"/>
+    <rect x="0" y="8" width="8" height="8" fill="#b71c1c"/>
+    <rect x="40" y="8" width="8" height="8" fill="#b71c1c"/>
+    <rect x="12" y="12" width="4" height="4" fill="#888"/>
+  </g>
+  <g transform="translate(248, 8) scale(0.25)">
+    <rect x="16" y="16" width="8" height="8" fill="#b71c1c"/>
+    <rect x="24" y="16" width="8" height="8" fill="#b71c1c"/>
+    <rect x="8" y="24" width="8" height="8" fill="#b71c1c"/>
+    <rect x="32" y="24" width="8" height="8" fill="#b71c1c"/>
+    <rect x="0" y="8" width="8" height="8" fill="#b71c1c"/>
+    <rect x="40" y="8" width="8" height="8" fill="#b71c1c"/>
+    <rect x="12" y="12" width="4" height="4" fill="#888"/>
+  </g>
+  <g transform="translate(278, 8) scale(0.25)">
+    <rect x="16" y="16" width="8" height="8" fill="#b71c1c"/>
+    <rect x="24" y="16" width="8" height="8" fill="#b71c1c"/>
+    <rect x="8" y="24" width="8" height="8" fill="#b71c1c"/>
+    <rect x="32" y="24" width="8" height="8" fill="#b71c1c"/>
+    <rect x="0" y="8" width="8" height="8" fill="#b71c1c"/>
+    <rect x="40" y="8" width="8" height="8" fill="#b71c1c"/>
+    <rect x="12" y="12" width="4" height="4" fill="#888"/>
+  </g>
+
+  <!-- SECOND ROW - very small (scale 0.3) -->
+  <g transform="translate(148, 18) scale(0.3)">
+    <rect x="16" y="16" width="8" height="8" fill="#c62828"/>
+    <rect x="24" y="16" width="8" height="8" fill="#c62828"/>
+    <rect x="8" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="0" y="8" width="8" height="8" fill="#c62828"/>
+    <rect x="40" y="8" width="8" height="8" fill="#c62828"/>
+    <rect x="12" y="12" width="4" height="4" fill="#aaa"/>
+  </g>
+  <g transform="translate(198, 18) scale(0.3)">
+    <rect x="16" y="16" width="8" height="8" fill="#c62828"/>
+    <rect x="24" y="16" width="8" height="8" fill="#c62828"/>
+    <rect x="8" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="0" y="8" width="8" height="8" fill="#c62828"/>
+    <rect x="40" y="8" width="8" height="8" fill="#c62828"/>
+    <rect x="12" y="12" width="4" height="4" fill="#aaa"/>
+  </g>
+  <g transform="translate(248, 18) scale(0.3)">
+    <rect x="16" y="16" width="8" height="8" fill="#c62828"/>
+    <rect x="24" y="16" width="8" height="8" fill="#c62828"/>
+    <rect x="8" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="0" y="8" width="8" height="8" fill="#c62828"/>
+    <rect x="40" y="8" width="8" height="8" fill="#c62828"/>
+    <rect x="12" y="12" width="4" height="4" fill="#aaa"/>
+  </g>
+  <g transform="translate(298, 18) scale(0.3)">
+    <rect x="16" y="16" width="8" height="8" fill="#c62828"/>
+    <rect x="24" y="16" width="8" height="8" fill="#c62828"/>
+    <rect x="8" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="0" y="8" width="8" height="8" fill="#c62828"/>
+    <rect x="40" y="8" width="8" height="8" fill="#c62828"/>
+    <rect x="12" y="12" width="4" height="4" fill="#aaa"/>
+  </g>
+
+  <!-- THIRD ROW - small (scale 0.35) -->
+  <g transform="translate(118, 30) scale(0.35)">
+    <rect x="16" y="16" width="8" height="8" fill="#d32f2f"/>
+    <rect x="24" y="16" width="8" height="8" fill="#d32f2f"/>
+    <rect x="8" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#d32f2f"/>
+    <rect x="0" y="8" width="8" height="8" fill="#d32f2f"/>
+    <rect x="40" y="8" width="8" height="8" fill="#d32f2f"/>
+    <rect x="12" y="12" width="4" height="4" fill="#ccc"/>
+  </g>
+  <g transform="translate(178, 30) scale(0.35)">
+    <rect x="16" y="16" width="8" height="8" fill="#d32f2f"/>
+    <rect x="24" y="16" width="8" height="8" fill="#d32f2f"/>
+    <rect x="8" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#d32f2f"/>
+    <rect x="0" y="8" width="8" height="8" fill="#d32f2f"/>
+    <rect x="40" y="8" width="8" height="8" fill="#d32f2f"/>
+    <rect x="12" y="12" width="4" height="4" fill="#ccc"/>
+  </g>
+  <g transform="translate(238, 30) scale(0.35)">
+    <rect x="16" y="16" width="8" height="8" fill="#d32f2f"/>
+    <rect x="24" y="16" width="8" height="8" fill="#d32f2f"/>
+    <rect x="8" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#d32f2f"/>
+    <rect x="0" y="8" width="8" height="8" fill="#d32f2f"/>
+    <rect x="40" y="8" width="8" height="8" fill="#d32f2f"/>
+    <rect x="12" y="12" width="4" height="4" fill="#ccc"/>
+  </g>
+  <g transform="translate(298, 30) scale(0.35)">
+    <rect x="16" y="16" width="8" height="8" fill="#d32f2f"/>
+    <rect x="24" y="16" width="8" height="8" fill="#d32f2f"/>
+    <rect x="8" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#d32f2f"/>
+    <rect x="0" y="8" width="8" height="8" fill="#d32f2f"/>
+    <rect x="40" y="8" width="8" height="8" fill="#d32f2f"/>
+    <rect x="12" y="12" width="4" height="4" fill="#ccc"/>
+  </g>
+  <g transform="translate(358, 30) scale(0.35)">
+    <rect x="16" y="16" width="8" height="8" fill="#d32f2f"/>
+    <rect x="24" y="16" width="8" height="8" fill="#d32f2f"/>
+    <rect x="8" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#d32f2f"/>
+    <rect x="0" y="8" width="8" height="8" fill="#d32f2f"/>
+    <rect x="40" y="8" width="8" height="8" fill="#d32f2f"/>
+    <rect x="12" y="12" width="4" height="4" fill="#ccc"/>
+  </g>
+
+  <!-- FOURTH ROW - medium-small (scale 0.4) -->
+  <g transform="translate(88, 42) scale(0.4)">
+    <rect x="16" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="8" y="24" width="8" height="8" fill="#d32f2f"/>
+    <rect x="32" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="0" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#ddd"/>
+  </g>
+  <g transform="translate(158, 42) scale(0.4)">
+    <rect x="16" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="8" y="24" width="8" height="8" fill="#d32f2f"/>
+    <rect x="32" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="0" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#ddd"/>
+  </g>
+  <g transform="translate(228, 42) scale(0.4)">
+    <rect x="16" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="8" y="24" width="8" height="8" fill="#d32f2f"/>
+    <rect x="32" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="0" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#ddd"/>
+  </g>
+  <g transform="translate(298, 42) scale(0.4)">
+    <rect x="16" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="8" y="24" width="8" height="8" fill="#d32f2f"/>
+    <rect x="32" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="0" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#ddd"/>
+  </g>
+  <g transform="translate(368, 42) scale(0.4)">
+    <rect x="16" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="8" y="24" width="8" height="8" fill="#d32f2f"/>
+    <rect x="32" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="0" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#ddd"/>
+  </g>
+
+  <!-- FIFTH ROW - medium (scale 0.5) -->
+  <g transform="translate(48, 56) scale(0.5)">
+    <rect x="16" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="8" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="16" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="24" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="0" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#fff"/>
+    <rect x="32" y="12" width="4" height="4" fill="#fff"/>
+  </g>
+  <g transform="translate(138, 56) scale(0.5)">
+    <rect x="16" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="8" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="16" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="24" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="0" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#fff"/>
+    <rect x="32" y="12" width="4" height="4" fill="#fff"/>
+  </g>
+  <g transform="translate(228, 56) scale(0.5)">
+    <rect x="16" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="8" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="16" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="24" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="0" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#fff"/>
+    <rect x="32" y="12" width="4" height="4" fill="#fff"/>
+  </g>
+  <g transform="translate(318, 56) scale(0.5)">
+    <rect x="16" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="8" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="16" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="24" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="0" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#fff"/>
+    <rect x="32" y="12" width="4" height="4" fill="#fff"/>
+  </g>
+  <g transform="translate(408, 56) scale(0.5)">
+    <rect x="16" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="8" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="16" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="24" y="24" width="8" height="8" fill="#c62828"/>
+    <rect x="32" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="0" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="8" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#fff"/>
+    <rect x="32" y="12" width="4" height="4" fill="#fff"/>
+  </g>
+
+  <!-- FRONT ROW - large (scale 0.65) -->
+  <g transform="translate(8, 72) scale(0.65)">
+    <rect x="16" y="16" width="8" height="8" fill="#ef5350"/>
+    <rect x="24" y="16" width="8" height="8" fill="#ef5350"/>
+    <rect x="8" y="24" width="8" height="8" fill="#ef5350"/>
+    <rect x="16" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="32" y="24" width="8" height="8" fill="#ef5350"/>
+    <rect x="16" y="32" width="8" height="8" fill="#ef5350"/>
+    <rect x="24" y="32" width="8" height="8" fill="#ef5350"/>
+    <rect x="0" y="8" width="8" height="8" fill="#ef5350"/>
+    <rect x="40" y="8" width="8" height="8" fill="#ef5350"/>
+    <rect x="0" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#fff"/>
+    <rect x="32" y="12" width="4" height="4" fill="#fff"/>
+  </g>
+  <g transform="translate(108, 72) scale(0.65)">
+    <rect x="16" y="16" width="8" height="8" fill="#ef5350"/>
+    <rect x="24" y="16" width="8" height="8" fill="#ef5350"/>
+    <rect x="8" y="24" width="8" height="8" fill="#ef5350"/>
+    <rect x="16" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="32" y="24" width="8" height="8" fill="#ef5350"/>
+    <rect x="16" y="32" width="8" height="8" fill="#ef5350"/>
+    <rect x="24" y="32" width="8" height="8" fill="#ef5350"/>
+    <rect x="0" y="8" width="8" height="8" fill="#ef5350"/>
+    <rect x="40" y="8" width="8" height="8" fill="#ef5350"/>
+    <rect x="0" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#fff"/>
+    <rect x="32" y="12" width="4" height="4" fill="#fff"/>
+  </g>
+  <g transform="translate(208, 72) scale(0.65)">
+    <rect x="16" y="16" width="8" height="8" fill="#ef5350"/>
+    <rect x="24" y="16" width="8" height="8" fill="#ef5350"/>
+    <rect x="8" y="24" width="8" height="8" fill="#ef5350"/>
+    <rect x="16" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="32" y="24" width="8" height="8" fill="#ef5350"/>
+    <rect x="16" y="32" width="8" height="8" fill="#ef5350"/>
+    <rect x="24" y="32" width="8" height="8" fill="#ef5350"/>
+    <rect x="0" y="8" width="8" height="8" fill="#ef5350"/>
+    <rect x="40" y="8" width="8" height="8" fill="#ef5350"/>
+    <rect x="0" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#fff"/>
+    <rect x="32" y="12" width="4" height="4" fill="#fff"/>
+  </g>
+  <g transform="translate(308, 72) scale(0.65)">
+    <rect x="16" y="16" width="8" height="8" fill="#ef5350"/>
+    <rect x="24" y="16" width="8" height="8" fill="#ef5350"/>
+    <rect x="8" y="24" width="8" height="8" fill="#ef5350"/>
+    <rect x="16" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="32" y="24" width="8" height="8" fill="#ef5350"/>
+    <rect x="16" y="32" width="8" height="8" fill="#ef5350"/>
+    <rect x="24" y="32" width="8" height="8" fill="#ef5350"/>
+    <rect x="0" y="8" width="8" height="8" fill="#ef5350"/>
+    <rect x="40" y="8" width="8" height="8" fill="#ef5350"/>
+    <rect x="0" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#fff"/>
+    <rect x="32" y="12" width="4" height="4" fill="#fff"/>
+  </g>
+  <g transform="translate(408, 72) scale(0.65)">
+    <rect x="16" y="16" width="8" height="8" fill="#ef5350"/>
+    <rect x="24" y="16" width="8" height="8" fill="#ef5350"/>
+    <rect x="8" y="24" width="8" height="8" fill="#ef5350"/>
+    <rect x="16" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="24" y="24" width="8" height="8" fill="#e53935"/>
+    <rect x="32" y="24" width="8" height="8" fill="#ef5350"/>
+    <rect x="16" y="32" width="8" height="8" fill="#ef5350"/>
+    <rect x="24" y="32" width="8" height="8" fill="#ef5350"/>
+    <rect x="0" y="8" width="8" height="8" fill="#ef5350"/>
+    <rect x="40" y="8" width="8" height="8" fill="#ef5350"/>
+    <rect x="0" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="40" y="16" width="8" height="8" fill="#e53935"/>
+    <rect x="12" y="12" width="4" height="4" fill="#fff"/>
+    <rect x="32" y="12" width="4" height="4" fill="#fff"/>
+  </g>
+
+  <!-- Text: clawmesh -->
+  <text x="250" y="145" text-anchor="middle" font-family="monospace, 'Courier New'" font-size="48" font-weight="bold">
+    <tspan fill="#ffffff">claw</tspan><tspan fill="#e53935">mesh</tspan>
+  </text>
+  
+  <!-- Tagline -->
+  <text x="250" y="175" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#888" font-style="italic">
+    Connecting Agents
+  </text>
+</svg>

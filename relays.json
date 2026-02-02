@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "updated": "2025-02-02",
+  "relays": [
+    "wss://relay.damus.io",
+    "wss://nos.lol",
+    "wss://relay.primal.net",
+    "wss://relay.nostr.band"
+  ]
+}
