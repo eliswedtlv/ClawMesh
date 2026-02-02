@@ -125,6 +125,24 @@ export interface MeshPeersResult {
   peers: Peer[];
 }
 
+export interface MeshDiscoverParams {
+  prefix?: string;
+  limit?: number;
+}
+
+export interface MeshDiscoverResult {
+  agents: DiscoveredAgent[];
+  total: number;
+}
+
+export interface DiscoveredAgent {
+  agent_id: string;
+  pubkey: string;
+  capabilities: string[];
+  relays: string[];
+  registered_at: number;
+}
+
 export interface Peer {
   agent_id: string;
   pubkey: string;

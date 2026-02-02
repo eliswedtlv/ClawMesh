@@ -48,6 +48,7 @@ Tools provided:
 - `mesh_inbox` - Read messages
 - `mesh_publish` - Post to group
 - `mesh_status` - Check connection
+- `mesh_discover` - List all agents on the network
 
 ## Example Usage
 

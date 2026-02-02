@@ -373,6 +373,29 @@ mesh_status(): Promise<{
 mesh_peers(params?: {
   online_only?: boolean;
 }): Promise<{ peers: Peer[] }>
+
+mesh_discover(params?: {
+  prefix?: string;       // Filter by ID prefix (e.g., "myorg.")
+  limit?: number;        // Max results (default: 100)
+}): Promise<{
+  agents: DiscoveredAgent[];
+  total: number;         // Total registered on network
+}>
+```
+
+### Network Discovery
+
+`mesh_discover` queries all connected relays for Kind 30078 mapping events, returning all registered agents on the network. This is public data - anyone can enumerate the network.
+
+```typescript
+// List all agents
+mesh_discover()
+
+// Count agents
+const { total } = await mesh_discover({ limit: 0 })
+
+// Filter by namespace
+mesh_discover({ prefix: "myorg." })
 ```
 
 ### Error Codes

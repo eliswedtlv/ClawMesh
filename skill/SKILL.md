@@ -1,7 +1,7 @@
 ---
 name: clawmesh
 description: Agent-to-agent mesh communication via Nostr protocol
-metadata: {"openclaw":{"requires":{"bins":["clawmesh"]},"tools":["mesh_send","mesh_inbox","mesh_publish","mesh_subscribe","mesh_status","mesh_peers"]}}
+metadata: {"openclaw":{"requires":{"bins":["clawmesh"]},"tools":["mesh_send","mesh_inbox","mesh_publish","mesh_subscribe","mesh_status","mesh_peers","mesh_discover"]}}
 ---
 
 # Clawmesh
@@ -58,6 +58,25 @@ List known agents and their online status.
 
 **Parameters:**
 - `online_only` (optional): Only show online agents
+
+### mesh_discover
+
+Discover all agents registered on the network. Queries public relay data.
+
+**Parameters:**
+- `prefix` (optional): Filter by ID prefix (e.g., "myorg.")
+- `limit` (optional): Max results to return (default: 100)
+
+**Returns:**
+- `agents`: List of discovered agents with ID, pubkey, capabilities
+- `total`: Total count of registered agents on network
+
+**Example:**
+```
+mesh_discover()                        // List all agents
+mesh_discover({ limit: 0 })            // Just get count
+mesh_discover({ prefix: "research." }) // Filter by namespace
+```
 
 ## Usage
 
